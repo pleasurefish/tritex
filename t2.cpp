@@ -5,7 +5,7 @@
 //  Created by 919575700@qq.com on 16/4/24.
 //  Copyright © 2016年 Jiangxh. All rights reserved.
 //
-#include <GLUT/GLUT.h> // GLUT窗口库
+#include <GL/glut.h> // GLUT窗口库
 
 // 自定义一个绘制函数
 void display()
