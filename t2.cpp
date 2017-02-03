@@ -1,0 +1,36 @@
+//
+//  main.cpp
+//  OpenGLDemo
+//
+//  Created by 919575700@qq.com on 16/4/24.
+//  Copyright © 2016? Jiangxh. All rights reserved.
+//
+#include <GL/glut.h> // GLUT???
+
+// ?????????
+void display()
+{
+    // ??
+    glClear(GL_COLOR_BUFFER_BIT);
+    // ?????????
+    glBegin(GL_POLYGON);
+    // ???????????
+    glVertex2f(-1, -1);
+    glVertex2f(1, -1);
+    glVertex2f(0, -0);
+    //????
+    glEnd();
+    glFlush();
+}
+
+// ????
+int main(int argc, char ** argv)
+{
+    //?????
+    glutInit(&argc, argv);
+    //??????Demo???
+    glutCreateWindow("Demo");
+    //????
+    glutDisplayFunc(display);
+    glutMainLoop();
+}
